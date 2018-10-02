@@ -12,7 +12,14 @@ const characters = [
 const charactersBuilder = () => {
     let domString = '';
     characters.forEach ((character) => {
-    domString += `<h1>${character.name}</h1>`;
+      domString += `<div>`;
+      domString += `<div class="card">`;
+      domString +=  `<img class="card-img-top" src="${character.imageURL}" alt="Card image cap">`;
+      domString +=  `<div class="cardBody">`;
+      domString +=     `<h5 class="card-title">${character.name}</h5>`;
+      domString += `</div>`;
+      domString += `</div>`;
+      domString +=  `</div>`;
     });
     printToDom(domString);
 
