@@ -2,17 +2,24 @@ import {printToDom} from '../helpers/util.js'
 
 const characters = [
 
-{name: "John Snow", house: "Stark", imageURL: "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a5/Profile-JonSnow-707.png/revision/latest?cb=20170828030553"},
-{name: "Arya Stark", house: "Stark", imageURL: "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a5/Profile-JonSnow-707.png/revision/latest?cb=20170828030553"},
-{name: "Daenerys Targaryen", house: "Targaryen", imageURL: "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a5/Profile-JonSnow-707.png/revision/latest?cb=20170828030553"},
-{name: "Tyrion Lannister", house: "Lannister", imageURL: "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a5/Profile-JonSnow-707.png/revision/latest?cb=20170828030553"},
+{id: 'character1' name: "John Snow", house: "Stark", imageURL: "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a5/Profile-JonSnow-707.png/revision/latest?cb=20170828030553"},
+{id: 'character2' name: "Arya Stark", house: "Stark", imageURL: "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a5/Profile-JonSnow-707.png/revision/latest?cb=20170828030553"},
+{id: 'character3' name: "Daenerys Targaryen", house: "Targaryen", imageURL: "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a5/Profile-JonSnow-707.png/revision/latest?cb=20170828030553"},
+{id: 'character4' name: "Tyrion Lannister", house: "Lannister", imageURL: "https://vignette.wikia.nocookie.net/gameofthrones/images/a/a5/Profile-JonSnow-707.png/revision/latest?cb=20170828030553"},
 
 ];
+
+const createEvents = () => {
+    const characterCards = document.getElementsByClassName('character-card');
+    for(let i=0;i<characterCards.length; i++) {
+        characterCards[i].addEventListener('click', characterClick);
+    }
+};
 
 const charactersBuilder = () => {
     let domString = '';
     characters.forEach ((character) => {
-      domString += `<div>`;
+      domString += `<div class="col-2 character-card">`;
       domString += `<div class="card">`;
       domString +=  `<img class="card-img-top" src="${character.imageURL}" alt="Card image cap">`;
       domString +=  `<div class="cardBody">`;
@@ -22,6 +29,7 @@ const charactersBuilder = () => {
       domString +=  `</div>`;
     });
     printToDom(domString);
+    createEvents();
 
 };
 
