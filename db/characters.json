@@ -20,27 +20,32 @@
      "house": "Lannister", 
      "imageUrl": "https://vignette.wikia.nocookie.net/gameofthrones/images/5/58/Tyrion_main_s7_e6.jpg/revision/latest?cb=20170818050344"
     },
-    {"id":"character4", 
+    {"id":"character5", 
      "name": "Tyrion Lannister", 
      "house": "Lannister", 
      "imageUrl": "https://vignette.wikia.nocookie.net/gameofthrones/images/5/58/Tyrion_main_s7_e6.jpg/revision/latest?cb=20170818050344"
     },
-    {"id":"character4", 
+    {"id":"character6", 
      "name": "Tyrion Lannister", 
      "house": "Lannister", 
      "imageUrl": "https://vignette.wikia.nocookie.net/gameofthrones/images/5/58/Tyrion_main_s7_e6.jpg/revision/latest?cb=20170818050344"
     },
-    {"id":"character4", 
+    {"id":"character7", 
      "name": "Tyrion Lannister", 
      "house": "Lannister", 
      "imageUrl": "https://vignette.wikia.nocookie.net/gameofthrones/images/5/58/Tyrion_main_s7_e6.jpg/revision/latest?cb=20170818050344"
     },
-    {"id":"character4", 
+    {"id":"character8", 
      "name": "Tyrion Lannister", 
      "house": "Lannister", 
      "imageUrl": "https://vignette.wikia.nocookie.net/gameofthrones/images/5/58/Tyrion_main_s7_e6.jpg/revision/latest?cb=20170818050344"
     },
-    {"id":"character4", 
+    {"id":"character9", 
+        "name": "Tyrion Lannister", 
+        "house": "Lannister", 
+        "imageUrl": "https://vignette.wikia.nocookie.net/gameofthrones/images/5/58/Tyrion_main_s7_e6.jpg/revision/latest?cb=20170818050344"
+    },
+    {"id":"character10", 
         "name": "Tyrion Lannister", 
         "house": "Lannister", 
         "imageUrl": "https://vignette.wikia.nocookie.net/gameofthrones/images/5/58/Tyrion_main_s7_e6.jpg/revision/latest?cb=20170818050344"
